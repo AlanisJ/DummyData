@@ -45,7 +45,7 @@ function generarMatricula() {
         apellido1: nombre.split(' ')[1],
         apellido2: nombre.split(' ')[2],
         nombres: nombre.split(' ')[0],
-        correo: `${nombre.split(' ')[0].toLowerCase()}${matricula.substring(0, 4)}@mail.com`,
+        correo: `${nombre.split(' ')[0].toLowerCase()}${matricula.substring(0, 4)}@alanismail.com`,
         fecha_nacimiento: `${Math.floor(Math.random() * 28) + 1}-${Math.floor(Math.random() * 12) + 1}-${Math.floor(Math.random() * (2002 - 1980)) + 1980}`
       });
     }
@@ -97,12 +97,12 @@ function generarMatricula() {
   const cantidadAcademicos = 10;
   const cantidadAdministrativos = 10;
   
-  console.log("Dummy data para alumnos:");
+  console.log("Alumnos:");
   console.table(generarAlumnos(cantidadAlumnos));
   
-  console.log("Dummy data para académicos:");
+  console.log("Académicos:");
   console.table(generarAcademicos(cantidadAcademicos));
   
-  console.log("Dummy data para administrativos:");
+  console.log("Administrativos:");
   console.table(generarAdministrativos(cantidadAdministrativos));
   
